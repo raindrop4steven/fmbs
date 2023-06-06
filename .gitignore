@@ -1,0 +1,11 @@
+
+.idea
+target
+weaver-log
+.log
+*.iml
+src/main/resources/rebel.xml
+/deploy
+/docs
+*.log
+/weaver-ebuilder-form-service/src/main/resources/log4j2.xml
