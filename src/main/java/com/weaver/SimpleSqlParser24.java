@@ -8,6 +8,10 @@ import net.sf.jsqlparser.statement.select.Select;
 import net.sf.jsqlparser.util.deparser.ExpressionDeParser;
 import net.sf.jsqlparser.util.deparser.SelectDeParser;
 
+/**
+ * 设计思路：
+ * 边查找边替换，如果表名已被处理过，则替换；否则记录下位置，等待from被处理过，再来替换。同时将位置更新
+ */
 public class SimpleSqlParser24 {
 
     public static void main(String args[]) throws JSQLParserException {
